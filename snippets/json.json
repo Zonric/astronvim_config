@@ -1,0 +1,31 @@
+{
+	"New Snippet": {
+		"prefix": ["newsnip"],
+		"body": [
+			"{",
+			"\t\"${1:SnippetName}\": {",
+			"\t\t\"prefix\": [\"${2:trigger}\"],",
+			"\t\t\"body\": [",
+			"\t\t\t$0",
+			"\t\t],",
+			"\t\t\"description\": \"${3:SnippetDescription}\"",
+			"\t}",
+			"}"
+		],
+		"description": "Create frame for new snippet."
+	},
+	"Next Snippet": {
+		"prefix": ["nextsnip"],
+		"body": [
+			",",
+			"\"${1:SnippetName}\": {",
+			"\t\"prefix\": [\"${2:trigger}\"],",
+			"\t\"body\": [",
+			"\t\t$0",
+			"\t],",
+			"\t\"description\": \"${3:SnippetDescription}\"",
+			"}"
+		],
+		"description": "Create another snippet."
+	}
+}

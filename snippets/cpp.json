@@ -1,0 +1,42 @@
+{
+	"Header Guard": {
+		"prefix": ["guard", "hppguard"],
+		"body": [
+			"#ifndef _$1_",
+			"#define _$1_",
+			"\n$0\n",
+			"#endif // _$1_"
+		],
+		"description": "Header Guards"
+	},
+	"Name Space": {
+		"prefix": "namespace",
+		"body": [
+			"namespace $1 {",
+			"\n\t$0\n",
+			"} // namespace $1"
+		]
+	},
+	"New Class": {
+		"prefix": ["class"],
+		"body": [
+			"class ${1:ClassName} {",
+			"\tprivate:",
+			"\t$0\n",
+			"\tpublic:\n",
+			"}; // class ${1:ClassName}"
+		],
+		"description": "Create New class"
+	},
+	"New Struct": {
+		"prefix": ["struct"],
+		"body": [
+			"struct ${1:StructName} {",
+			"\tpublic:",
+			"\t$0\n",
+			"\tprivate:\n",
+			"};"
+		],
+		"description": "Create a new struct."
+	}
+}
